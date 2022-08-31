@@ -1,0 +1,89 @@
+int mayorId(LinkedList* this, int* id)
+{
+    int todoOk = 0;
+    Passenger* auxPass = NULL;
+    int mayor;
+    if(this != NULL)
+    {
+        for(int i=0; i<ll_len(this); i++)
+        {
+            auxPass = (Passenger*) ll_get(this, i);
+            if(i == 0 || auxPass->id > mayor)
+            {
+                mayor = auxPass->id;
+            }
+        }
+        *id = mayor + 1;
+        todoOk = 1;
+    }
+    return todoOk;
+}
+
+int guardarId(int mayorId)
+{
+    int todoOk = 0;
+
+    if(mayorId > 1)
+    {
+        FILE* pF = fopen("ID_NO TOCAR", "wb");
+
+        if(pF != NULL)
+        {
+            fwrite(&mayorId, sizeof(int), 1, pF);
+            fclose(pF);
+            todoOk = 1;
+        }
+    }
+    return todoOk;
+}
+
+
+
+
+int controller_saveAsBinary(char* path, LinkedList* pArrayListPassenger)
+{
+    int todoOk = 0;
+    Passenger* auxPas;
+    int cant;
+    char conf;
+    int nextId;
+    char cadena[80] = {"ID,NOMBRE,APELLIDO,PRECIO,CODIGO,ESTADO DE VUELO,TIPO DE PASAJERO\n"};
+
+    if(path != NULL && pArrayListPassenger != NULL)
+    {
+        FILE* pFile = fopen(path, "rb");
+
+        if(pFile != NULL)
+        {
+            printf("Precauci%cn!, ya existe un archivo con ese nombre y se va a sobrescribir\n", 162);
+            confirma("Desea guardarlo con el mismo nombre, de todas formas? ", &conf);
+        }
+        fclose(pFile);
+
+        if(pFile == NULL || conf == 's')
+        {
+            pFile = fopen(path, "wb");
+            fwrite(cadena, sizeof(char), 80, pFile);
+            for(int i=0; i<ll_len(pArrayListPassenger); i++)
+            {
+                auxPas = ll_get(pArrayListPassenger, i);
+                if(auxPas != NULL)
+                {
+                    cant = fwrite(auxPas, sizeof(Passenger), 1, pFile);
+                    todoOk = 1;
+                }
+                if(cant <1)
+                {
+                    return todoOk;
+                }
+            }
+            fclose(pFile);
+        }
+        mayorId(pArrayListPassenger, &nextId);
+        guardarId(nextId);
+
+    }
+    return todoOk;
+}
+
+mayor id y guardar id para que quede el ultimo id en sistema

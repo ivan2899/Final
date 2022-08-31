@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1656481469 source:d:\importante\programacion\material en proceso\programacion__codeblocks\cordobaivan.parcial2\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1656482591 d:\importante\programacion\material en proceso\programacion__codeblocks\cordobaivan.parcial2\linkedlist.h
+
+1656485477 source:d:\importante\programacion\material en proceso\programacion__codeblocks\cordobaivan.parcial2\movies.c
+	<stdlib.h>
+	<stdio.h>
+	"movies.h"
+
+1656509604 d:\importante\programacion\material en proceso\programacion__codeblocks\cordobaivan.parcial2\movies.h
+
+1656513920 source:d:\importante\programacion\material en proceso\programacion__codeblocks\cordobaivan.parcial2\mibiblioteca.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<time.h>
+	"miBiblioteca.h"
+	"movies.h"
+
+1656513995 d:\importante\programacion\material en proceso\programacion__codeblocks\cordobaivan.parcial2\mibiblioteca.h
+	"movies.h"
+
+1656508429 source:d:\importante\programacion\material en proceso\programacion__codeblocks\cordobaivan.parcial2\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"movies.h"
+	"miBiblioteca.h"
+
+1656513995 source:d:\importante\programacion\material en proceso\programacion__codeblocks\cordobaivan.parcial2\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<time.h>
+	"controller.h"
+	"miBiblioteca.h"
+	"parser.h"
+	"movies.h"
+
+1656513121 d:\importante\programacion\material en proceso\programacion__codeblocks\cordobaivan.parcial2\controller.h
+	"LinkedList.h"
+
+1656485477 d:\importante\programacion\material en proceso\programacion__codeblocks\cordobaivan.parcial2\parser.h
+
+1656512288 source:d:\importante\programacion\material en proceso\programacion__codeblocks\cordobaivan.parcial2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<time.h>
+	"LinkedList.h"
+	"controller.h"
+	"miBiblioteca.h"
+

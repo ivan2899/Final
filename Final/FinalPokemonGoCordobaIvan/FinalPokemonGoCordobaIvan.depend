@@ -1,0 +1,76 @@
+# depslib dependency file v1.0
+1661958637 source:c:\users\ivanc\desktop\practicafinal\modelos\finalpokemongocordobaivan\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"pokemon.h"
+
+1661958070 c:\users\ivanc\desktop\practicafinal\modelos\finalpokemongocordobaivan\linkedlist.h
+
+1661969425 source:c:\users\ivanc\desktop\practicafinal\modelos\finalpokemongocordobaivan\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"LinkedList.h"
+	"controller.h"
+	"miBiblioteca.h"
+	"generadorInformes.h"
+
+1661964591 c:\users\ivanc\desktop\practicafinal\modelos\finalpokemongocordobaivan\controller.h
+	"LinkedList.h"
+
+1661968211 source:c:\users\ivanc\desktop\practicafinal\modelos\finalpokemongocordobaivan\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<time.h>
+	"miBiblioteca.h"
+	"controller.h"
+	"parser.h"
+	"pokemon.h"
+	"generadorInformes.h"
+
+1661965821 source:c:\users\ivanc\desktop\practicafinal\modelos\finalpokemongocordobaivan\mibiblioteca.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<time.h>
+	"miBiblioteca.h"
+
+1661965782 c:\users\ivanc\desktop\practicafinal\modelos\finalpokemongocordobaivan\mibiblioteca.h
+
+1661965587 source:c:\users\ivanc\desktop\practicafinal\modelos\finalpokemongocordobaivan\pokemon.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"pokemon.h"
+	"miBiblioteca.h"
+	"generadorInformes.h"
+
+1661965782 c:\users\ivanc\desktop\practicafinal\modelos\finalpokemongocordobaivan\pokemon.h
+	"LinkedList.h"
+
+1661969425 source:c:\users\ivanc\desktop\practicafinal\modelos\finalpokemongocordobaivan\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"pokemon.h"
+	"miBiblioteca.h"
+
+1656485477 c:\users\ivanc\desktop\practicafinal\modelos\finalpokemongocordobaivan\parser.h
+
+1661918775 source:c:\users\ivanc\desktop\practicafinal\modelos\finalpokemongocordobaivan\generadorinformes.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"pokemon.h"
+	"miBiblioteca.h"
+
+1661956974 c:\users\ivanc\desktop\practicafinal\modelos\finalpokemongocordobaivan\generadorinformes.h
+	"pokemon.h"
+
